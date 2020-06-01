@@ -15,7 +15,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:text="Sign Up"
         android:layout_centerHorizontal="true"
         android:textSize="40sp"
@@ -26,7 +26,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
         android:orientation="vertical"
         android:layout_marginTop="70dp">
 
@@ -126,7 +127,7 @@
 
             <Button
                 android:id="@+id/btnReg"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"

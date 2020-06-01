@@ -32,6 +32,8 @@ dependencies {
 
 
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+
     implementation 'info.hoang8f:fbutton:1.0.5'
 
 

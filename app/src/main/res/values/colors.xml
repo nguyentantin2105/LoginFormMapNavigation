@@ -15,4 +15,6 @@
     <color name="Yellow">#FFEB3B</color>
     <color name="Red">#F44336</color>
     <color name="Orange">#FF9800</color>
+    <color name="google">#B83030</color>
+    <color name="facebook">#304DB8</color>
 </resources>
