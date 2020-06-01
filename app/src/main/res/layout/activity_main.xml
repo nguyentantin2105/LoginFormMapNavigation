@@ -1,84 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Username:"
-        android:textColor="#000"
-        android:textSize="50px"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="225dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:text="Password:"
-        android:textColor="#000"
-        android:textSize="50px"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="313dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="221dp"
-        android:layout_height="141dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="2dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="326dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="Map Navigation "
-        android:gravity="center"
-        android:textColor="#333"
-        android:textSize="100px"
-        app:fontFamily="@font/joti_one"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="143dp" />
-
-    <EditText
-        android:id="@+id/name_id"
-        android:layout_width="274dp"
-        android:layout_height="45dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:hint="  abc@gmail.com"
-        android:inputType="textPersonName"
-        android:textColorHint="#666"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="218dp" />
 
     <Button
         android:id="@+id/button"
@@ -122,6 +49,21 @@
         tools:layout_editor_absoluteY="578dp" />
 
     <EditText
+        android:id="@+id/name_id"
+        android:layout_width="274dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="  abc@gmail.com"
+        android:inputType="textPersonName"
+        android:textColorHint="#666"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
         android:id="@+id/pass_id"
         android:layout_width="274dp"
         android:layout_height="45dp"
@@ -149,4 +91,75 @@
         tools:layout_editor_absoluteX="238dp"
         tools:layout_editor_absoluteY="460dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="221dp"
+        android:layout_height="141dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginBottom="587dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Username:"
+        android:textColor="#000"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Password:"
+        android:textColor="#000"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="540dp"
+        android:gravity="center"
+        android:text="Map Navigation"
+        android:textColor="#333"
+        android:textSize="60px"
+        app:fontFamily="@font/joti_one"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+</RelativeLayout>
