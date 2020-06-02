@@ -50,9 +50,6 @@ public class RegisterActivity extends AppCompatActivity {
                 || TextUtils.isEmpty(txtPassword)||TextUtils.isEmpty(txtPhone)||TextUtils.isEmpty(txtAddress)){
                     Toast.makeText(RegisterActivity.this, "All fields required", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    
-                }
             }
         });
     }
@@ -63,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
         progressDialog.setIndeterminate(false);
         progressDialog.setTitle("Registering New Account");
         progressDialog.show();
-        String url = "http://127.0.0.1/LoginFormMapNavigation/register.php";
+        String url = "http://10.0.0.1/registerform/register.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

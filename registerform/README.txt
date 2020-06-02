@@ -1,0 +1,1 @@
+Please copy this folder and paste in the folder /xampp/htdocs

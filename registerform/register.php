@@ -1,24 +1,23 @@
 <?php
-require "conn.php"
+require "conn.php";
 
-/*$username=$_POST["username"];
+$username=$_POST["username"];
 $email=$_POST["email"];
 $password=$_POST["pass"];
 $phone=$_POST["phone"];
-$address = $_POST["address"];*/
+$address = $_POST["address"];
 
-$username="tin";
+/*$username="tinpro1234";
 $email="tin@gmail.com";
 $password="123456";
 $phone="0328519310";
-$address = "ktx khu b";
+$address = "ktx khu b";*/
 
 $isValidEmail = filter_var($email, FILTER_VALIDATE_EMAIL);
 if($conn){
 if(strlen($password)>40||strlen($password)<6){
 echo "Password must be less than 40 and more than 6 characters";
 }else if($isValidEmail === false){
-
 echo "This Email is not valid";
 }
 else{
