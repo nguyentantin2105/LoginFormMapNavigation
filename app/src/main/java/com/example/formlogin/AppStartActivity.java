@@ -1,5 +1,7 @@
 package com.example.formlogin;
 
-public class AppStartActivity {
-    
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AppStartActivity extends AppCompatActivity {
+
 }

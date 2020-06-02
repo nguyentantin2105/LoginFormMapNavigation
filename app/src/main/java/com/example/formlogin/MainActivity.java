@@ -13,6 +13,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Button signin;
     CheckBox rememberSignin;
     SharedPreferences sharedPreferences;
+    TextView forgotpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +45,13 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.txtPass);
         rememberSignin = findViewById(R.id.ckbRemember);
         signin = findViewById(R.id.btnLog);
-
+        forgotpass = findViewById(R.id.forgotPass);
+        forgotpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ForgotPasswordActivity.class));
+            }
+        });
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

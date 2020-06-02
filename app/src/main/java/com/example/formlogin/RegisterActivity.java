@@ -50,6 +50,15 @@ public class RegisterActivity extends AppCompatActivity {
                 || TextUtils.isEmpty(txtPassword)||TextUtils.isEmpty(txtPhone)||TextUtils.isEmpty(txtAddress)){
                     Toast.makeText(RegisterActivity.this, "All fields required", Toast.LENGTH_SHORT).show();
                 }
+                else {
+//                    Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+//                    startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                    registerNewAccount(txtUserName,
+                            txtEmail,
+                            txtPassword,
+                            txtPhone,
+                            txtAddress);
+                }
             }
         });
     }
