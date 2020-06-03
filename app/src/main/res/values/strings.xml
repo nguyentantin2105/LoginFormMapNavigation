@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">formLogin</string>
+
     <string name="facebook_app_id">2690432351239811</string>
+
     <string name="perfLoginState">loginstate</string>
 </resources>
